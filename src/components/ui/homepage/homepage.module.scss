@@ -1,0 +1,7 @@
+.contain_bars {
+  @apply flex;
+  .sidebar {
+    @apply me-2 flex flex-col items-center overflow-hidden;
+    @apply h-screen w-20 mt-3 shadow-xl dark:shadow-white ;
+  }
+}
