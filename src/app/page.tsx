@@ -1,18 +1,22 @@
-"use client";
-import styles from "@/components/ui/homepage/homepage.module.scss";
-import Sidebar from "@/components/ui/sidebar/sidebar";
-import Navbar from "@/components/ui/navbar/navbar";
+import Sidebar from "@/layouts/sidebar/sidebar";
+import Navbar from "@/layouts/navbar/navbar";
+import Homepage from "@/layouts/homepage/homepage";
 
 export default function Home() {
-    return (
-        <div className={styles.contain_bars}>
-            <div className={styles.sidebar}>
-                <Sidebar/>
-            </div>
-            <div className={styles.content}>
-                <Navbar/>
-                <h1>Home Page</h1>
-            </div>
-        </div>
-    );
+  return (
+    <div>
+      <div
+        className={"w-14 fixed top-0 left-0 lg:flex flex-col items-center overflow-hidden h-screen shadow-2xl dark:shadow-sm dark:shadow-white pt-3 hidden"}>
+        <Sidebar/>
+      </div>
+      <div>
+        <Navbar className={"lg:ms-14 w-full h-[6vh] pe-14 fixed top-0 left-0 flex items-center justify-center z-10 shadow-md dark:shadow-sm dark:shadow-gray-600"}/>
+      </div>
+      <div>
+        <Homepage className={"relative lg:ms-14 mt-16 mx-4 flex justify-center"}/>
+      </div>
+    </div>
+  );
 }
+
+

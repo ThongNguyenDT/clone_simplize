@@ -1,0 +1,1 @@
+export {default as AntdBadge} from "./badge_ant";
