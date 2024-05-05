@@ -99,10 +99,10 @@ const navdata = [
 const Navbar = ({ className }: any) => {
   return (
     <div className={className}>
-      <div className={"lg:hidden w-5 h-4 flex items-center justify-center bg-background"}>
+      <div className={"lg:hidden w-5 h-4 flex items-center justify-center"}>
         <MenuOutlined className={"ms-10"}/>
       </div>
-      <div className={"w-full lg:max-w-[1472px] flex items-center lg:justify-between justify-center lg:px-11 bg-background"}>
+      <div className={"w-full lg:max-w-[1472px] flex items-center lg:justify-between justify-center lg:px-11"}>
         <div className={"flex items-center lg:gap-8 justify-center lg:justify-start"}>
           <Link href={"/"} className={"h-full"}>
             <div className={"h-full"}>
@@ -115,7 +115,7 @@ const Navbar = ({ className }: any) => {
           <SearchBox placeholder={"hello"}/>
         </div>
       </div>
-      <div className={"max-w-28 lg:hidden w-14 h-14 flex items-center justify-center bg-background"}>
+      <div className={"max-w-28 lg:hidden w-14 h-14 flex items-center justify-center"}>
         <div className={"w-14"}>
           <BellFilled/>
         </div>
